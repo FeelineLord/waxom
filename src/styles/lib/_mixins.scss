@@ -1,0 +1,24 @@
+@mixin contentWrapper {
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 599px) {
+    padding: 30px 20px;
+  }
+
+  @media (min-width: 600px) and (max-width: 899px) {
+    padding: 40px 20px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1279px) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 80px calc((100% - 1200px) / 2);
+  }
+}
+
+@mixin svgLink {
+  
+}

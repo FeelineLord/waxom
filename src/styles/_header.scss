@@ -1,0 +1,48 @@
+.waxom-header {
+  width: calc(100% - 80px);
+  max-width: 1200px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & > embed {
+      position: relative;
+      z-index: -1;
+    }
+
+    & > span {
+      font-size: 34px;
+      color: $mainTextColor;
+    }
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .waxom-header {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .waxom-header {
+    width: calc(100% - 30px);
+  }
+}
+
+@media (max-width: 599px) {
+  .waxom-header {
+    width: calc(100% - 30px);
+  }
+}

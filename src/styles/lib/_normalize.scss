@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
